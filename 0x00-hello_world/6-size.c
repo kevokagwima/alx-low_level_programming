@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - Main function
+ * Return: returns a value
+*/
 int main(void)
 {
 printf("Size of int: %zu bytes\n", sizeof(int));
