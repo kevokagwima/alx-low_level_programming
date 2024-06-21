@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/*The main function prints out a text*/
+/**
+ * main - The main function prints out a text
+*/
 
 int main(void)
 {
