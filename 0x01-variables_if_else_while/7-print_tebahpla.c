@@ -11,6 +11,6 @@ for (letter = 'z'; letter >= 'a'; letter--)
 {
 putchar(letter);
 }
-putchar('\n'); // Print a newline
+putchar('\n');
 return (0);
 }
