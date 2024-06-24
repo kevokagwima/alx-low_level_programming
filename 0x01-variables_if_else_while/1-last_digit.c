@@ -8,7 +8,7 @@
 int main()
 {
 srand(time(NULL));
-int n = rand() % (2 * RAND_MAX / 3) - RAND_MAX / 3;
+int n = rand() % 100;
 printf("%d is ", n);
 int last_digit = n % 10;
 if (last_digit > 5)
