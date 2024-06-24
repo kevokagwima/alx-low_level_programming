@@ -5,13 +5,13 @@
 * main - this function uses printf
 * Return: Returns a value
 */
-int main()
+int main(void)
 {
 int n;
 int last_digit;
 srand(time(NULL));
 n = rand() % 100;
-printf("%d is ", n);
+printf("Last digit of %d is ", n);
 last_digit = n % 10;
 if (last_digit > 5)
 {
