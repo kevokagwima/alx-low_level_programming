@@ -10,6 +10,6 @@ for (letter = 'a'; letter <= 'z'; letter++)
 {
 putchar(letter);
 }
-putchar('\n'); // Print a newline
+putchar('\n');
 return (0);
 }
