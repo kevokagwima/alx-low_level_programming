@@ -4,7 +4,7 @@
 * Return: Return a value
 * print_alphabet - Prints the lowercase alphabet followed by a newline
 */
-void main(void)
+int  main(void)
 {
 char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
