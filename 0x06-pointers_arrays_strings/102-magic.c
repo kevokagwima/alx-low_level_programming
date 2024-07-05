@@ -17,6 +17,7 @@ p = &n;
 */
 *p = 98;
 /* ...so that this prints 98\n */
+a[2] = 98;
 printf("a[2] = %d\n", a[2]);
 return (0);
 }
