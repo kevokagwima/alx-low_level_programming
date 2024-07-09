@@ -11,14 +11,26 @@
 */
 char *_strchr(char *s, char c)
 {
-while (*s)
+while (*s != '\0')
 {
-if (*s != c)
+if (*s == c)
+return s;
 s++;
-else
-return (s);
 }
-if (c == '\0')
-return (s);
-return (NULL);
+return NULL;
+}
+int main(void)
+{
+char *s = "hello";
+char *f;
+f = _strchr(s, 'l');
+if (f != NULL)
+{
+printf("%s\n", f); // Output: "llo"
+}
+else
+{
+printf("Character not found.\n");
+}
+return 0;
 }
