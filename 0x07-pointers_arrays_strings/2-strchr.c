@@ -2,35 +2,24 @@
 
 /**
 * _strchr - locates a character in a string
-*
 * @c: occurrence of the character
-*
 * @s: in the string
-*
 * Return: a pointer to the first occurrence of the character
+* c in the string s, or NULL if the character is not found
 */
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
+int a;
+while (1)
 {
-if (*s == c)
-return s;
-s++;
-}
-return NULL;
-}
-int main(void)
+a = *s++;
+if (a == c)
 {
-char *s = "hello";
-char *f;
-f = _strchr(s, 'l');
-if (f != NULL)
-{
-printf("%s\n", f); // Output: "llo"
+return (s - 1);
 }
-else
+if (a == 0)
 {
-printf("Character not found.\n");
+return (NULL);
 }
-return 0;
+}
 }
