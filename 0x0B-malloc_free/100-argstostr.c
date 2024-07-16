@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-/*
+/**
 *argstostr - concatenates all arguments of the program.
 *@ac: argument count.
 *@av: pointer to array of size ac.
@@ -27,7 +27,7 @@ j++;
 size++;
 i++;
 }
-arg = malloc((sizeof(char) * size) + 1);
+arg = malloc((sizeof(char) * size) +1);
 if (arg == NULL)
 return (NULL);
 i = 0;
